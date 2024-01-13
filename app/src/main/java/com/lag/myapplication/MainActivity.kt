@@ -22,15 +22,18 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("jay")
+                    ChefApp("jay")
                 }
             }
         }
     }
+
 }
 
+
+
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun ChefApp(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -41,6 +44,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     MyApplicationTheme {
-        Greeting("Android")
+        ChefApp("Android")
     }
 }
