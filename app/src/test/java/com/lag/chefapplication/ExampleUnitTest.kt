@@ -1,4 +1,4 @@
-package com.lag.myapplication
+package com.lag.chefapplication
 
 import org.junit.Test
 

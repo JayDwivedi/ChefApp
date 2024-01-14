@@ -1,14 +1,13 @@
-package com.lag.myapplication.viewmodel
+package com.lag.chefapplication.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.lag.myapplication.data.ChefRepository
-import com.lag.myapplication.data.remote.ChefApiService
-import com.lag.myapplication.model.ChefResponse
-import com.lag.myapplication.model.Recipe
-import com.lag.myapplication.utils.NetworkResult
+import com.lag.chefapplication.data.ChefRepository
+import com.lag.chefapplication.model.ChefResponse
+import com.lag.chefapplication.model.Recipe
+import com.lag.chefapplication.utils.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

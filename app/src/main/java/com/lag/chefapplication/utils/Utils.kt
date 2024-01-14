@@ -1,4 +1,4 @@
-package com.lag.myapplication.utils
+package com.lag.chefapplication.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

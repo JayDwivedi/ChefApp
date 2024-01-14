@@ -1,4 +1,4 @@
-package com.lag.myapplication.data.remote
+package com.lag.chefapplication.data.remote
 
 import javax.inject.Inject
 

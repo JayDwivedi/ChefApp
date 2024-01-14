@@ -1,7 +1,7 @@
-package com.lag.myapplication
+package com.lag.chefapplication
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class ChefApp:Application()
+class ChefBookingApp:Application()

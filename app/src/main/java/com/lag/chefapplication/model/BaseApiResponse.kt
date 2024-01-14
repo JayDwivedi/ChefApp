@@ -1,6 +1,6 @@
-package com.lag.myapplication.model
+package com.lag.chefapplication.model
 
-import com.lag.myapplication.utils.NetworkResult
+import com.lag.chefapplication.utils.NetworkResult
 import retrofit2.Response
 
 abstract class BaseApiResponse {

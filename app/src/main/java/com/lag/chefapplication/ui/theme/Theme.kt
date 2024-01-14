@@ -1,4 +1,4 @@
-package com.lag.myapplication.ui.theme
+package com.lag.chefapplication.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,6 +1,6 @@
-package com.lag.myapplication.di
+package com.lag.chefapplication.di
 
-import com.lag.myapplication.data.remote.ChefApiService
+import com.lag.chefapplication.data.remote.ChefApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

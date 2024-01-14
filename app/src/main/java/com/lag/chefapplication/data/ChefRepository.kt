@@ -1,10 +1,10 @@
-package com.lag.myapplication.data
+package com.lag.chefapplication.data
 
-import com.lag.myapplication.data.remote.RemoteDataSource
-import com.lag.myapplication.model.BaseApiResponse
-import com.lag.myapplication.model.ChefResponse
-import com.lag.myapplication.model.Recipe
-import com.lag.myapplication.utils.NetworkResult
+import com.lag.chefapplication.data.remote.RemoteDataSource
+import com.lag.chefapplication.model.BaseApiResponse
+import com.lag.chefapplication.model.ChefResponse
+import com.lag.chefapplication.model.Recipe
+import com.lag.chefapplication.utils.NetworkResult
 import dagger.hilt.android.scopes.ActivityRetainedScoped
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

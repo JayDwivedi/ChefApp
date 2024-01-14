@@ -1,4 +1,4 @@
-package com.lag.myapplication.utils
+package com.lag.chefapplication.utils
 
 class Constants {
 

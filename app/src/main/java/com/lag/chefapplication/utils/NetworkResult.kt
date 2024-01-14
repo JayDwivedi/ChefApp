@@ -1,4 +1,4 @@
-package com.lag.myapplication.utils
+package com.lag.chefapplication.utils
 
 sealed class NetworkResult<T>(
     val data: T? = null,

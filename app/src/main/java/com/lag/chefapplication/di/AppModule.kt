@@ -1,4 +1,4 @@
-package com.lag.myapplication.di
+package com.lag.chefapplication.di
 
 import dagger.Module
 import dagger.hilt.InstallIn

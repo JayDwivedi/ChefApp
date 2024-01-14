@@ -1,9 +1,8 @@
-package com.lag.myapplication.data.remote
+package com.lag.chefapplication.data.remote
 
-import com.lag.myapplication.model.ChefResponse
-import com.lag.myapplication.model.Recipe
-import com.lag.myapplication.utils.Constants
-import kotlinx.coroutines.flow.Flow
+import com.lag.chefapplication.model.ChefResponse
+import com.lag.chefapplication.model.Recipe
+import com.lag.chefapplication.utils.Constants
 import retrofit2.Response
 import retrofit2.http.GET
 

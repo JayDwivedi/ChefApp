@@ -1,4 +1,4 @@
-package com.lag.myapplication.model
+package com.lag.chefapplication.model
 
 import com.google.gson.annotations.SerializedName
 
