@@ -10,6 +10,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
+import com.lag.chefapplication.ui.screens.NavigationRoutes
+import com.lag.chefapplication.ui.screens.authenticatedGraph
+import com.lag.chefapplication.ui.screens.unauthenticatedGraph
 import com.lag.chefapplication.ui.theme.MyApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -36,12 +42,32 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ChefApp(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colorScheme.background
+    ) {
+        MainAppNavHost()
+    }
 
+}
+@Composable
+fun MainAppNavHost(
+    modifier: Modifier = Modifier,
+    navController: NavHostController = rememberNavController(),
+) {
+    NavHost(
+        modifier = modifier,
+        navController = navController,
+        startDestination = NavigationRoutes.Unauthenticated.NavigationRoute.route
+    ) {
+        // Unauthenticated user flow screens
+        unauthenticatedGraph(navController = navController)
+
+        // Authenticated user flow screens
+        authenticatedGraph(navController = navController)
+    }
+
+}
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
