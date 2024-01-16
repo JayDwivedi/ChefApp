@@ -86,7 +86,7 @@ fun LoginScreen(
                         modifier = Modifier
                             .padding(top = AppTheme.dimens.paddingLarge)
                             .fillMaxWidth(),
-                        text = stringResource(id = R.string.jetpack_compose),
+                        text = stringResource(id = R.string.app_name),
                         textAlign = TextAlign.Center
                     )
 
@@ -97,7 +97,7 @@ fun LoginScreen(
                             .height(128.dp)
                             .padding(top = AppTheme.dimens.paddingSmall),
                         model = ImageRequest.Builder(LocalContext.current)
-                            .data(data = R.drawable.ic_launcher_background)
+                            .data(data = R.mipmap.ic_launcher)
                             .crossfade(enable = true)
                             .scale(Scale.FILL)
                             .build(),

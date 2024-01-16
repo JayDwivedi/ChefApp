@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
     id ("com.google.dagger.hilt.android")
     id ("org.jetbrains.kotlin.plugin.serialization")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -85,9 +86,13 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
 
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-auth")
 
     // Hilt
     implementation ("com.google.dagger:hilt-android:2.50")
+
     kapt ("com.google.dagger:hilt-android-compiler:2.50")
     implementation ("androidx.hilt:hilt-navigation-compose:1.1.0")
     implementation ("androidx.hilt:hilt-navigation-fragment:1.1.0")
