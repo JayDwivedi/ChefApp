@@ -25,13 +25,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyApplicationTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    ChefApp("jay")
-                }
+                ChefApp("jay")
             }
         }
     }
@@ -39,17 +33,17 @@ class MainActivity : ComponentActivity() {
 }
 
 
-
 @Composable
 fun ChefApp(name: String, modifier: Modifier = Modifier) {
+    // A surface container using the 'background' color from the theme
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background
     ) {
         MainAppNavHost()
     }
-
 }
+
 @Composable
 fun MainAppNavHost(
     modifier: Modifier = Modifier,
@@ -68,6 +62,7 @@ fun MainAppNavHost(
     }
 
 }
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
